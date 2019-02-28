@@ -25,12 +25,12 @@ const plugins = [
 		resolve: "gatsby-mdx",
 		options: {
 			gatsbyRemarkPlugins: [
-				"gatsby-remark-copy-linked-files",
-				"gatsby-remark-autolink-headers",
-				"gatsby-remark-prismjs",
-				"gatsby-remark-reading-time",
-				"gatsby-remark-smartypants",
-				"@weknow/gatsby-remark-twitter",
+				// { resolve: "gatsby-remark-copy-linked-files" },
+				// { resolve: "gatsby-remark-autolink-headers" },
+				// { resolve: "gatsby-remark-prismjs" },
+				{ resolve: "gatsby-remark-reading-time" },
+				// { resolve: "gatsby-remark-smartypants" },
+				// { resolve: "@weknow/gatsby-remark-twitter" },
 				{
 					resolve: "gatsby-remark-images",
 					options: {
@@ -42,7 +42,7 @@ const plugins = [
 		}
 	},
 	"gatsby-plugin-catch-links",
-	"gatsby-redirect-from",
+	// "gatsby-redirect-from",
 	"gatsby-plugin-react-helmet",
 	{
 		resolve: "gatsby-plugin-typography",

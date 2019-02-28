@@ -45,7 +45,7 @@ public class RescueController : SmartDispatcherController, IRescueController
 
         Response.StatusCode = 404;
         Response.StatusDescription = "Not found";
-        RenderSharedView("rescues\404");
+        RenderSharedView("rescues\\404");
     }
 
     private void BindFeaturedProductsToView()

@@ -71,7 +71,7 @@ const BlogPostTemplate = ({ data, classes }) => {
 };
 
 function massage({
-	markdownRemark: {
+	mdx: {
 		frontmatter: { id, title, date, dateFormatted },
 		fields: { slug },
 		html,
@@ -164,7 +164,7 @@ export const pageQuery = graphql`
 				githubLink
 			}
 		}
-		markdownRemark(fields: { slug: { eq: $slug } }) {
+		mdx(fields: { slug: { eq: $slug } }) {
 			frontmatter {
 				id
 				title
